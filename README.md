@@ -1,0 +1,3 @@
+# Photomosaic Builder
+
+This repo aims to build a photomosaic i.e. an aggregate photo based on a combination of many individual photos. The theory behind the same will be explained in detail in a post; currently the project is in progress...
