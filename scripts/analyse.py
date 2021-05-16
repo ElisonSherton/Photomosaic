@@ -18,3 +18,12 @@ def get_image_stats(img_pth):
             "meanB": mB,
             "width": W,
             "height": H}
+
+def get_segmented_img_stats(img):
+    # Get the individual channels of image and take mean over the channel
+    get_component = lambda x: np.array(img)[:, :, x]
+    mR, mG, mB = [np.mean(get_component(x)) for x in range(3)]
+
+    return {"meanR": mR,
+            "meanG": mG,
+            "meanB": mB}
